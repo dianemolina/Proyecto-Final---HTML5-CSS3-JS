@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* nav */
+
+nav{
+    background-color: #181D31;
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    height: 85px;
+}
+
+.nav{
+   
+    display: flex;
+    justify-content: flex-end;
+}
+ul {
+    list-style: none;
+}
+
+.claro{
+    
+    font-size: 16px;
+    background-color: #E6DDC4;
+    padding: 10px 10px;
+    margin: 25px;
+    border-radius: 10px;
+    border-color: #E6DDC4;
+    box-shadow: 2px 3px #678983;    
+}
+
+.claro:active{
+    transform:translate(2px,3px);
+    box-shadow: none;
+}
+
+#pantalla1, #base1{
+    animation:   mover2 ease-in 4s 1;
+}
+
+#pantalla2, #base2{
+    animation: mover1 ease-in 4s 1;
+}
+#raton, #click{
+    animation: mover2 ease-in 4s 1;
+}
+@keyframes mover1 {
+    
+    0% {
+        transform: translate(0,-15px);
+        opacity:0;
+    }
+    20%{
+        transform: translate(0,-15px);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(0,0);
+        opacity:1;
+    }
+    100% {
+        transform: translate(0,0);
+        opacity:1;
+    }
+}   
+
+@keyframes mover2 {
+    0%{
+        transform: translate(0,-15px);
+        opacity:0;
+    }
+    25%{
+        transform: translate(0,-15px);
+        opacity: 0;
+    }
+    55%{
+        transform: translate(0,0);
+        opacity:1;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity:1;
+    }
+    
+}
+
+/* main -- index.html */
+
+.inicio{
+    height: 500px;
+    background-image: url(./assets/imagenes/codigo.jpg);
+    background-size:cover ;
+    background-attachment: fixed;
+}
+.titulocentral{
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    text-shadow: 6px 5px black;
+    padding-top: 12%;
+}
+.titulocentral{
+    animation: aparecer ease 4s 1;
+}
+.contenido{
+    background-color: #181D31;
+} 
+.textcontenido {
+    color: #678983;
+    font-size: 38px;
+    text-align: center; 
+    text-shadow: 2px 2px black;
+    padding-top: 20px;
+}
+
+
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    height: 800px;
+   
+}
+.card1{
+    width: 350px;
+    height: 400px;
+    border: 5px solid  #678983;
+    background-color:  #E6DDC4;
+    margin-top: 150px;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+.icard1{
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.card1:hover{
+    transform: scale(1.1,1.1) ;
+}
+.textcontenido{
+    animation: aparecer 6s ease-in-out 1 ;
+}
+@keyframes aparecer {
+    from{   
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.azul{
+    font-size: 16px;
+    background-color:  #181D31;
+    padding: 8px;
+    margin: 25px;
+    border-radius: 10px;
+    border-color:  none ;
+    box-shadow: 2px 3px #678983;  
+    color: #E6DDC4;
+    width: 45%;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+.azul2{
+    font-size: 16px;
+    background-color:  #181D31;
+    padding: 8px;
+    margin: 25px;
+    border-radius: 10px;
+    border-color:  none ;
+    box-shadow: 2px 3px #678983;  
+    color: #E6DDC4;
+    width: 45%;
+    margin-top: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+.azul:active, .azul2:active {
+    transform:translate(2px,3px);
+    box-shadow: none;
+
+}
+.azul:hover, .azul2:hover{
+    background-color:#678983 ;
+}
+/* footer */
+footer{
+    padding-top: 50px;
+    background-color: #678983;
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+}
+.imgf{
+ width: 112x;
+ height: 80px;
+ margin-left: -500px;
+
+}
+.uno{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    text-align: center;
+    
+}
+.textf{
+    margin-left: 50px;
+    margin-top: 12px;
+    color:  #181D31;
+    
+}
+.textf2{
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 20px;
+    color:  #181D31;
+    margin-right: -350px;
+}
+
+/* main -- historia.html */
+
+.primerparte{
+    background-color: #181D31;
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 1fr;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}
+
+.primerparte:hover, .segundaparte:hover, .tercerparte:hover{
+    transform: scale(1.1,1.1);
+    transition: 3s;
+    box-shadow: 0px 2px 15px 10px  #E6DDC4;
+
+}
+.titulopp{
+    grid-column: 2;
+    color: #678983;
+    font-size: 38px;
+    text-shadow: 2px 2px black;
+    padding-left: 85px;
+    padding-top: 10px;
+}
+.textpp{
+    grid-column: 3;
+    font-size: 16px;
+    color:#E6DDC4 ;
+    padding-left: 85px;
+    padding-right: 100px;
+    text-align: justify;
+    line-height:25px; 
+}
+
+.segundaparte{
+    background-color: #678983;
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 1fr;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+.textsp{
+    grid-column: 2;
+    font-size: 16px;
+    color:#E6DDC4 ;
+    padding-left: 160px;
+    padding-right:300px ;
+    text-align: justify;
+    line-height:25px; 
+
+}
+.titulosp{
+    color: #181D31;
+    grid-column: 3;
+    font-size: 40px;
+    text-shadow: 2px 2px #E6DDC4;
+    padding-right: 150px;
+    padding-top: 20px;
+}
+
+.tercerparte{
+    background-color: #181D31;
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: 1fr;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+.titulotp{
+    grid-column: 1;
+    color: #678983;
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+.texttp{
+    grid-column: 2;
+    font-size: 16px;
+    color:#E6DDC4 ;
+    text-align: justify;
+    padding-right: 100px;
+    line-height:25px; 
+}
+.partevideo{
+    background-color: #181D31;
+    padding-top: 85px;
+    padding-bottom: 100PX;
+}
+.textv{
+    color: #678983;
+    text-shadow: 2px 2px black;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+
+}
+.videocontenedor{
+    width: 1300px;
+    height: 610px;
+    background-color: black;
+
+    top: 0; 
+    bottom: 0;
+    margin: auto;
+
+    padding-bottom: 210px;
+    
+}
+
+.barraReproduccion{
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-columns: 1fr;
+    background-color:#1b1a1a;
+    border-radius: 10px;
+    padding: 20px 5px;
+    color: white;
+    width: 98.5%;
+  
+    top: 0; 
+    bottom: 0;
+    margin: auto;
+}
+
+.playPause{
+    grid-column: 1;
+    
+}
+.tiempo{
+    grid-column: 3;
+    
+}
+.play, .pause {
+    background-color: #E6DDC4;
+    border-radius: 10px;
+    border-color: black;
+    box-shadow: 3px 3px #678983;
+    padding: 9px 35px;  
+    margin-left: 20px;
+    
+}
+
+.play:active, .pause:active {
+    transform:translate(3px,3px);
+    box-shadow: none;
+}
+
+
+
+
+/* main -- juguemos.html */
+
+.parterompecabez{
+    background-color: #181D31;
+
+}
+.rompecabezas{
+    display: flex;
+    justify-content: center;
+
+}
+.botonr{
+    background-color: #181D31;
+    padding-bottom: 100px;
+}
+
+
+.reinicio{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    background-color: #E6DDC4;
+    padding-top: 8px;
+    padding-left: 100px;
+    padding-bottom: 8px;
+    padding-right: 100px;
+    border-radius: 10px;
+    border-color:black;
+    box-shadow: 2px 3px #678983; 
+    margin-top: 50px;
+
+}
+.reinicio:active{
+    transform:translate(2px,3px);
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+/*------------------------*/
+a {
+    text-decoration: none;
+    
+}
