@@ -38,15 +38,28 @@
         </div>
         <div class="parterompecabez">
                 <h2 class="textv">Armemos el rompecabezas y veamos que imagen es...</h2>
+                <div class="armarRompe">
+                    <div class="primeraImg">
+                        <p class="textoRompe">Arrastre y suelte la imágene aquí</p>
+                    </div>
+                    <div class="segundaImg">
+                        <p class="textoRompe">Arrastre y suelte la imágene aquí</p>
+                    </div>
+                    <div class="tercerImg">
+                        <p class="textoRompe">Arrastre y suelte la imágene aquí</p>
+                    </div>
+                </div>
                 <div class="rompecabezas">
-                    <img src="./assets/imagenes/rompe2.png" alt="Segunda parte rompecabezas">
-                    <img src="./assets/imagenes/Rompe1.png" alt="Primer parte rompecabezas">
-                    <img src="./assets/imagenes/Rompe3.png" alt="Tercer parte rompecabezas">
+                    <img src="./assets/imagenes/rompe2.png" alt="Segunda parte rompecabezas" ondragstart="funcionInicio(event)">
+                    <img src="./assets/imagenes/Rompe1.png" alt="Primer parte rompecabezas" ondragstart="funcionInicio(event)">
+                    <img src="./assets/imagenes/Rompe3.png" alt="Tercer parte rompecabezas" ondragstart="funcionInicio(event)">
                 </div>
                 <div class="botonr">
-                    <button class="reinicio">Reiniciar</button>
+                    <button class="reinicio" onclick="reinicio()">Reiniciar</button>
                 </div>
         </div>
-    </main>    
+    </main>  
+    
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -204,9 +204,9 @@ footer{
     height: 120px;
 }
 .imgf{
- width: 112x;
- height: 80px;
- margin-left: -500px;
+    width: 112x;
+    height: 80px;
+    margin-left: -500px;
 
 }
 .uno{
@@ -396,11 +396,41 @@ footer{
     background-color: #181D31;
 
 }
+
+.armarRompe{
+    display: flex ;
+    justify-content: center;
+
+    align-items: center;
+   
+}
+.primeraImg, .segundaImg, .tercerImg{
+  
+    width: 285px;
+    height: 505px;
+    background-color: #929090 ;
+    border: 2px solid black;
+    color: #E6DDC4;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.textoRompe{
+    margin-top: 250px;
+    margin-left: 8px;
+}
+.primeraImg:hover, .segundaImg:hover, .tercerImg:hover{
+    background-color: #1d1d1d;
+    
+}
+
 .rompecabezas{
     display: flex;
     justify-content: center;
 
 }
+
 .botonr{
     background-color: #181D31;
     padding-bottom: 100px;
