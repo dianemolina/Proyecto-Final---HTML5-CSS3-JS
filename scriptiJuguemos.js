@@ -1,8 +1,4 @@
 //  hoja juguemos
-//-- resumen : 3 eventos de d&d :
-// dragstart(elemento de arrastre - guardo en el dataTransfer)
-// - dragover(elemento destino)
-// - drop (elemento destino)
 
 // primer img
 
@@ -63,3 +59,11 @@ lugar3.addEventListener("drop",(evento)=>{
    document.querySelector(".textoRompe3").style.display="none"
    
 });
+
+
+
+//funcion reinicio
+
+function reinicio() {
+   window.location.reload();
+}
